@@ -6,7 +6,6 @@ const LogoMarquee = () => {
     { name: 'AWS', logo: '/awslogo.svg' },
     { name: 'Microsoft', logo: '/logos/microsoftlogo.svg' },
     { name: 'ServiceNow', logo: '/logos/servicenowlogo.svg' },
-    // { name: 'USDA', logo: '/logos/usdalogo.svg' },
     { name: 'Tenable', logo: '/logos/tenablelogo.svg' },
     { name: 'Snowflake', logo: '/logos/snowfakelogo.svg' },
     { name: 'Verizon', logo: '/logos/verizonlogo.svg' },
@@ -35,7 +34,7 @@ const LogoMarquee = () => {
                   <img
                     src={partner.logo}
                     alt={partner.name}
-                    className="w-full h-full object-contain brightness-0 invert opacity-90 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300"
+                    className="w-full h-full object-contain brightness-0 invert opacity-90"
                   />
                 </div>
               ))}

@@ -8,6 +8,9 @@ import Image from 'next/image'
 import LogoMarquee from '@/app/components/ui/LogoMarquee'
 import OurCapabilities from '@/app/components/sections/OurCapabilities'
 import ResultsSection from '@/app/components/sections/ResultsSection'
+import TransformSection from '@/app/components/sections/TransformSection'
+import Footer from '@/app/components/sections/footer'
+import ClientsMarque from '@/app/components/ui/ClientsMarque'
 
 
 
@@ -24,7 +27,10 @@ function page() {
   <About/>
  <LogoMarquee/>
  <OurCapabilities/>
+ <ClientsMarque/>
  <ResultsSection/>
+ <TransformSection/>
+ <Footer/>
 
    </>
   )
