@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { MapPin, Phone, Share2, Linkedin, ArrowRight } from 'lucide-react';
 import Button from '../ui/Button';
-
+import Image from 'next/image';
 // X/Twitter Icon Component
 const XIcon = () => (
   <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
@@ -115,7 +115,7 @@ export default function Footer() {
             <div className="space-y-5">
               {/* Texas Location */}
               <div className="flex gap-3">
-                <MapPin className="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" />
+                <Image src={"/location.svg"} alt="logo" width={20} height={20} />
                 <div>
                   <p className="font-semibold text-sm mb-1">TEXAS</p>
                   <p className="text-gray-300 text-sm leading-relaxed">
@@ -127,7 +127,7 @@ export default function Footer() {
               {/* Social Links */}
               <div>
                 <div className="flex items-center gap-3 mb-3">
-                  <Share2 className="w-5 h-5 text-purple-500" />
+                <Image src={"/shareicon.svg"} alt="logo" width={20} height={20} />
                   <p className="font-semibold text-sm">SOCIAL LINKS</p>
                 </div>
                 <div className="flex gap-3 ml-8">

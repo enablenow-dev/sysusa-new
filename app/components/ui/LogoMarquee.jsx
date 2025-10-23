@@ -1,14 +1,14 @@
 "use client";
-import React from 'react';
+import React from "react";
 
 const LogoMarquee = () => {
   const partners = [
-    { name: 'AWS', logo: '/awslogo.svg' },
-    { name: 'Microsoft', logo: '/logos/microsoftlogo.svg' },
-    { name: 'ServiceNow', logo: '/logos/servicenowlogo.svg' },
-    { name: 'Tenable', logo: '/logos/tenablelogo.svg' },
-    { name: 'Snowflake', logo: '/logos/snowfakelogo.svg' },
-    { name: 'Verizon', logo: '/logos/verizonlogo.svg' },
+    { name: "AWS", logo: "/awslogo.svg" },
+    { name: "Microsoft", logo: "/logos/microsoftlogo.svg" },
+    { name: "ServiceNow", logo: "/logos/servicenowlogo.svg" },
+    { name: "Tenable", logo: "/logos/tenablelogo.svg" },
+    { name: "Snowflake", logo: "/logos/snowfakelogo.svg" },
+    { name: "Verizon", logo: "/logos/verizonlogo.svg" },
   ];
 
   return (
@@ -20,16 +20,17 @@ const LogoMarquee = () => {
       </div>
 
       <div className="relative">
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-purple-700 to-transparent z-10 pointer-events-none"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-blue-600 to-transparent z-10 pointer-events-none"></div>
+        {/* Left & Right gradient overlays */}
+        <div className="absolute left-0 top-0 bottom-0 w-20 sm:w-32 bg-gradient-to-r from-purple-700 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-20 sm:w-32 bg-gradient-to-l from-blue-600 to-transparent z-10 pointer-events-none"></div>
 
         <div className="flex animate-marquee">
           {[...Array(3)].map((_, setIdx) => (
-            <div key={setIdx} className="flex items-center gap-16 px-8 shrink-0">
+            <div key={setIdx} className="flex items-center gap-8 sm:gap-16 px-4 sm:px-8 shrink-0">
               {partners.map((partner, idx) => (
                 <div
                   key={`${setIdx}-${idx}`}
-                  className="flex items-center justify-center shrink-0 w-48 h-24"
+                  className="flex items-center justify-center shrink-0 w-28 sm:w-48 h-16 sm:h-24"
                 >
                   <img
                     src={partner.logo}
@@ -60,6 +61,12 @@ const LogoMarquee = () => {
 
         .animate-marquee:hover {
           animation-play-state: paused;
+        }
+
+        @media (max-width: 768px) {
+          .animate-marquee {
+            flex-wrap: nowrap;
+          }
         }
       `}</style>
     </div>

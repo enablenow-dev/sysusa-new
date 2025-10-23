@@ -38,14 +38,17 @@ function About() {
       text: (
         <>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            facilisis magna et dolor tincidunt, at tincidunt ex vestibulum.
-            Mauris consequat, elit sed ultrices finibus, velit mi aliquam eros,
-            nec dignissim orci sapien vel erat.
-          </p>
-          <p>
-            Nunc tristique lectus nec ex tincidunt, eget viverra eros faucibus.
-            Fusce imperdiet justo a nulla feugiat, vel malesuada lorem cursus.
+            SYSUSA was founded on{' '}
+            <span className="font-semibold text-gray-900">
+              trust, integrity, and honesty
+            </span>{' '}
+            to empower individuals, support communities, and promote human
+            development. Driven by innovation, security, and agility, we deliver
+            high-quality,{' '}
+            <span className="font-semibold text-gray-900">
+              best-value technology and security services
+            </span>{' '}
+            with a strong focus on customer satisfaction.
           </p>
         </>
       ),
@@ -69,17 +72,17 @@ function About() {
   };
 
   return (
-    <div className="relative min-h-[90vh] w-full bg-[#F0F0F2] flex items-center justify-center px-4">
-      {/* Inner Box - Overlapping Card */}
-      <div className="relative max-w-8xl w-[90%] mx-auto bg-gray-100 p-16 rounded-3xl shadow-xl -mt-36 lg:-mt-60">
+  <section className="relative w-full bg-[#F0F0F2] flex items-center justify-center px-4 sm:px-6 md:px-10 lg:px-16 py-6 sm:py-8 pb-12 md:pb-16 lg:pb-24">
+      {/* Inner Box */}
+  <div className="relative w-full max-w-7xl mx-auto bg-gray-100 p-6 sm:p-8 md:p-10 lg:p-12 rounded-3xl shadow-xl -mt-4 md:-mt-8 lg:-mt-12">
         
         {/* Navigation Tabs */}
-        <div className="flex gap-8 mb-16 border-b border-gray-200">
+  <div className="flex flex-wrap gap-6 sm:gap-8 mb-6 sm:mb-8 border-b border-gray-200">
           {tabs.map((tab) => (
             <div key={tab.id} className="flex flex-col items-start">
               <button
                 onClick={() => setActiveTab(tab.id)}
-                className={`font-semibold text-lg mb-2 transition-colors duration-200 ${
+                className={`font-semibold text-base sm:text-lg mb-2 transition-colors duration-200 ${
                   activeTab === tab.id
                     ? 'text-purple-600'
                     : 'text-gray-800 hover:text-purple-500'
@@ -97,35 +100,45 @@ function About() {
         </div>
 
         {/* Main Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          
           {/* Left Column */}
-          <div className="space-y-8">
-            <h1 className="text-5xl font-bold text-gray-900 leading-tight">
+          <div className="space-y-6 sm:space-y-8 text-center lg:text-left">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-snug sm:leading-tight">
               {content[activeTab].title}
             </h1>
 
-            <div className="space-y-4 text-gray-700 text-lg leading-relaxed font-inter">
+            <div className="space-y-4 text-gray-700 text-base sm:text-lg leading-relaxed font-inter">
               {content[activeTab].text}
             </div>
 
-            <Button
-              bgColor="white"
-              border="border-2 border-yellow-500"
-              textColor="text-black"
-            >
-              Discover Our Approach
-            </Button>
+            <div className="flex justify-center lg:justify-start">
+              <Button
+                bgColor="white"
+                border="border-2 border-yellow-500"
+                textColor="text-black"
+              >
+                Discover Our Approach
+              </Button>
+            </div>
           </div>
 
           {/* Right Column */}
-          <div className="relative">
-            <div className="rounded-3xl overflow-hidden shadow-2xl">
-              <Image src="/aboutimage.png" alt="About Section" width={800} height={600} />
+          <div className="relative flex justify-center lg:justify-end">
+            <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl max-w-[90%] sm:max-w-[80%] lg:max-w-full">
+              <Image
+                src="/aboutimage.png"
+                alt="About Section"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover"
+                priority
+              />
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
