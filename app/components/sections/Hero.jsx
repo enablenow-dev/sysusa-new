@@ -27,7 +27,7 @@ function Hero() {
 
             {/* === Text + CTA === */}
             <div className="max-w-4xl mb-auto">
-              <h1 className="text-white font-[500] font-syne leading-[1.2] text-[2.5rem] sm:text-[3rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[4.5rem] mb-6">
+              <h1 className="text-white font-[500] font-[syne] leading-[1.2] text-[2.5rem] sm:text-[3rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[4.5rem] mb-6">
                 Transform your business<br className="hidden sm:block" /> with ServiceNow and<br className="hidden sm:block" /> cybersecurity expertise
               </h1>
 
