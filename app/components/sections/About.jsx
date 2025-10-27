@@ -16,68 +16,66 @@ function About() {
     who: {
       title: 'We are certified experts delivering high-value technology solutions',
       text: (
-        <>
-          <p>
-            SYSUSA was founded on{' '}
-            <span className="font-semibold text-gray-900">
-              trust, integrity, and honesty
-            </span>{' '}
-            to empower individuals, support communities, and promote human
-            development. Driven by innovation, security, and agility, we deliver
-            high-quality,{' '}
-            <span className="font-semibold text-gray-900">
-              best-value technology and security services
-            </span>{' '}
-            with a strong focus on customer satisfaction.
-          </p>
-        </>
+        <p>
+          SYSUSA was founded on{' '}
+          <span className="font-semibold text-gray-900">
+            trust, integrity, and honesty
+          </span>{' '}
+          to empower individuals, support communities, and promote human
+          development. Driven by innovation, security, and agility, we deliver
+          high-quality,{' '}
+          <span className="font-semibold text-gray-900">
+            best-value technology and security services
+          </span>{' '}
+          with a strong focus on customer satisfaction.
+        </p>
       ),
     },
     what: {
       title: 'We innovate, secure, and transform businesses worldwide',
       text: (
-        <>
-          <p>
-            SYSUSA was founded on{' '}
-            <span className="font-semibold text-gray-900">
-              trust, integrity, and honesty
-            </span>{' '}
-            to empower individuals, support communities, and promote human
-            development. Driven by innovation, security, and agility, we deliver
-            high-quality,{' '}
-            <span className="font-semibold text-gray-900">
-              best-value technology and security services
-            </span>{' '}
-            with a strong focus on customer satisfaction.
-          </p>
-        </>
+        <p>
+          SYSUSA was founded on{' '}
+          <span className="font-semibold text-gray-900">
+            trust, integrity, and honesty
+          </span>{' '}
+          to empower individuals, support communities, and promote human
+          development. Driven by innovation, security, and agility, we deliver
+          high-quality,{' '}
+          <span className="font-semibold text-gray-900">
+            best-value technology and security services
+          </span>{' '}
+          with a strong focus on customer satisfaction.
+        </p>
       ),
     },
     challenge: {
       title: 'We tackle complex challenges with strategic solutions',
       text: (
-        <>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            suscipit, ex sit amet fringilla facilisis, odio turpis gravida
-            neque, id rhoncus mi eros ut tortor.
-          </p>
-          <p>
-            Donec volutpat, quam in efficitur tincidunt, augue libero bibendum
-            ipsum, ac sollicitudin risus justo ut ante. Integer in semper lacus.
-          </p>
-        </>
+        <p>
+          SYSUSA was founded on{' '}
+          <span className="font-semibold text-gray-900">
+            trust, integrity, and honesty
+          </span>{' '}
+          to empower individuals, support communities, and promote human
+          development. Driven by innovation, security, and agility, we deliver
+          high-quality,{' '}
+          <span className="font-semibold text-gray-900">
+            best-value technology and security services
+          </span>{' '}
+          with a strong focus on customer satisfaction.
+        </p>
       ),
     },
   };
 
   return (
-  <section className="relative w-full bg-[#F0F0F2] flex items-center justify-center px-4 sm:px-6 md:px-10 lg:px-16 py-6 sm:py-8 pb-12 md:pb-16 lg:pb-24">
+    <section className="relative w-full bg-[#F0F0F2] flex items-center justify-center px-4 sm:px-6 md:px-10 lg:px-16 py-6 sm:py-8 pb-12 md:pb-16 lg:pb-24">
       {/* Inner Box */}
-  <div className="relative w-full max-w-7xl mx-auto bg-gray-100 p-6 sm:p-8 md:p-10 lg:p-12 rounded-3xl shadow-xl -mt-4 md:-mt-8 lg:-mt-12">
+      <div className="relative w-full max-w-7xl mx-auto bg-gray-100 p-6 sm:p-8 md:p-10 lg:p-12 rounded-3xl shadow-xl -mt-4 md:-mt-8 lg:-mt-12">
         
         {/* Navigation Tabs */}
-  <div className="flex flex-wrap gap-6 sm:gap-8 mb-6 sm:mb-8 border-b border-gray-200">
+        <div className="flex flex-wrap gap-6 sm:gap-8 mb-6 sm:mb-8 border-b border-gray-200">
           {tabs.map((tab) => (
             <div key={tab.id} className="flex flex-col items-start">
               <button
@@ -104,7 +102,8 @@ function About() {
           
           {/* Left Column */}
           <div className="space-y-6 sm:space-y-8 text-center lg:text-left">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-snug sm:leading-tight">
+            {/* Fixed title size at 2rem (32px) */}
+            <h1 className="text-[2rem] font-bold text-gray-900 leading-snug">
               {content[activeTab].title}
             </h1>
 

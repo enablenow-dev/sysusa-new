@@ -6,7 +6,7 @@ export default function Button({
   href,
   onClick,
   // Style customization
-  bgColor = 'bg-yellow-500',
+  bgColor = 'bg-[#FFA21F]',
   hoverBgColor = 'hover:bg-yellow-400',
   textColor = 'text-purple-900',
   hoverTextColor = 'hover:text-purple-900',
