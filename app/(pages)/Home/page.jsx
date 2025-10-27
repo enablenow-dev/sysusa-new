@@ -23,14 +23,14 @@ function page() {
   
   return (
    <>
-  <Hero/>
+  {/* <Hero/>
   <About/>
  <LogoMarquee/>
  <OurCapabilities/>
  <ClientsMarque/>
  <ResultsSection/>
  <TransformSection/>
- <Footer/>
+ <Footer/> */}
 
    </>
   )
