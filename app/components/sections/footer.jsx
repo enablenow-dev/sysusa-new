@@ -87,7 +87,7 @@ export default function Footer() {
             <div className="space-y-5">
               {/* Virginia Location */}
               <div className="flex gap-3">
-                <MapPin className="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" />
+              <Image src={"/location.svg"} alt="logo" width={20} height={20} />
                 <div>
                   <p className="font-semibold text-sm mb-1">SYSUSA Inc. Virginia</p>
                   <p className="text-gray-300 text-sm leading-relaxed">
@@ -98,7 +98,7 @@ export default function Footer() {
 
               {/* Phone */}
               <div className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-purple-500 mt-0.5" />
+               <Image src={"/phoneicon.svg"} alt="logo" width={20} height={20} />
                 <div>
                   <span className="font-semibold text-sm">CALL: </span>
                   <a href="tel:2028006040" className="text-gray-300 hover:text-white transition-colors text-sm">
