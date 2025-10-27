@@ -9,10 +9,10 @@ const Header = () => {
     <header className="absolute top-0 left-0 right-0 py-6 md:py-8 text-white w-full z-20">
              
       {/* Main Content Container: This container goes edge-to-edge (or nearly so) and spaces out the Logo and Button. */}
-      <div className="w-full max-w-full mx-auto flex justify-between items-center px-8 lg:px-12 relative">
+      <div className="w-full max-w-full mx-auto flex justify-between items-center px-6 sm:px-8 md:px-10 lg:px-16 relative">
                 
         {/* 1. Logo/Brand Name (Extreme Left) */}
-        <div className="flex-shrink-0 z-10 pl-12">
+        <div className="flex-shrink-0 z-10 pl-4 sm:pl-6 md:pl-8 lg:pl-12">
           {/* Link to homepage and display optimized logo from public/ */}
           <Link href="/">
             <Image
