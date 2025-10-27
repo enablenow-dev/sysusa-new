@@ -12,7 +12,7 @@ const Header = () => {
       <div className="w-full max-w-full mx-auto flex justify-between items-center px-8 lg:px-12 relative">
                 
         {/* 1. Logo/Brand Name (Extreme Left) */}
-        <div className="flex-shrink-0 z-10">
+        <div className="flex-shrink-0 z-10 pl-12">
           {/* Link to homepage and display optimized logo from public/ */}
           <Link href="/">
             <Image
