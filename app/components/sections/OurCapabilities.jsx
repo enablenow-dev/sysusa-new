@@ -39,7 +39,7 @@ const Capabilities = () => {
         <div className="space-y-6">
           
           <Capability
-            icon={'/settings.svg'}
+            icon={'/groupsetting.svg'}
             title="ServiceNow"
             description="SYSUSA excels in building and scaling platforms, fixing stalled projects, and driving value with ServiceNow, automating processes and integrating systems for operational excellence."
           />
@@ -48,7 +48,7 @@ const Capabilities = () => {
           <div className="h-1 bg-transparent"></div> 
 
           <Capability
-            icon={'/settings2.svg'}
+            icon={'/cybersecurity.svg'}
             title="Cybersecurity"
             description="SYSUSA leads in cybersecurity, tailoring strategies to reduce risk and empower your enterprise with the expertise to defend against evolving threats."
           />
