@@ -5,7 +5,7 @@ const LogoMarquee = () => {
   const partners = [
     { name: "AWS", logo: "/awslogo.svg" },
     { name: "Microsoft", logo: "/logos/microsoftlogo.svg" },
-    { name: "ServiceNow", logo: "/logos/servicenowlogo.svg" },
+    { name: "ServiceNow", logo: "/logos/ServiceNow_logo.svg" },
     { name: "Tenable", logo: "/logos/tenablelogo.svg" },
     { name: "Snowflake", logo: "/logos/snowfakelogo.svg" },
    
