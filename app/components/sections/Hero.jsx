@@ -102,7 +102,7 @@ function Hero() {
               </div>
 
               {/* Desktop: Original Layout */}
-              <div className="hidden lg:flex flex-row items-end justify-between gap-8 pb-4">
+              <div className="hidden lg:flex flex-row items-end justify-between gap-8 pb-6">
                 
                 {/* === Logos Left === */}
                 <div className="flex flex-nowrap items-center justify-start gap-8 xl:gap-10 pb-2">

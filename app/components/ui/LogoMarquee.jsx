@@ -8,7 +8,7 @@ const LogoMarquee = () => {
     { name: "ServiceNow", logo: "/logos/servicenowlogo.svg" },
     { name: "Tenable", logo: "/logos/tenablelogo.svg" },
     { name: "Snowflake", logo: "/logos/snowfakelogo.svg" },
-    { name: "Verizon", logo: "/logos/verizonlogo.svg" },
+   
   ];
 
   return (
