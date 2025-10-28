@@ -43,7 +43,7 @@ const Capability = ({ icon, title, description }) => {
         <Button
           bgColor='white'
           border='2px border-2 border-yellow-500'
-          textColor='black'
+          textColor="text-green"
           fontSize='500'
         >
           Explore More
