@@ -23,7 +23,7 @@ function Hero() {
 
         {/* === Main Content === */}
         <div className="relative z-10 flex-1 flex flex-col">
-          <div className="container mx-auto px-5 sm:px-6 md:px-8 lg:px-12 xl:px-16 pt-20 sm:pt-28 md:pt-32 lg:pt-36 xl:pt-40 pb-6 sm:pb-10 md:pb-12 lg:pb-14 flex flex-col justify-between h-full">
+          <div className="container mx-auto px-5 sm:px-6 md:px-8 lg:px-12 xl:px-16 pt-20 sm:pt-28 md:pt-32 lg:pt-36 xl:pt-40 pb-8 sm:pb-12 md:pb-16 lg:pb-20 flex flex-col justify-between h-full">
 
             {/* === Text + CTA === */}
             <div className="max-w-4xl flex-shrink-0">
@@ -42,7 +42,7 @@ function Hero() {
             </div>
 
             {/* === Logos + Stats Row (Bottom) === */}
-            <div className="w-full mt-auto pt-8 sm:pt-10 md:pt-12 lg:pt-14 pb-4 sm:pb-6 md:pb-8 lg:pb-10 flex-shrink-0">
+            <div className="w-full mt-auto pt-8 sm:pt-10 md:pt-12 lg:pt-14 pb-10 sm:pb-12 md:pb-16 lg:pb-20 flex-shrink-0">
               {/* Mobile: Stacked Layout */}
               <div className="lg:hidden flex flex-col gap-6 sm:gap-8 pb-4">
                 {/* Stats First on Mobile */}
