@@ -42,11 +42,11 @@ function Hero() {
             </div>
 
             {/* === Logos + Stats Row (Bottom) === */}
-            <div className="w-full mt-auto pt-8 sm:pt-10 md:pt-12 lg:pt-14 flex-shrink-0">
+            <div className="w-full mt-auto pt-8 sm:pt-10 md:pt-12 lg:pt-14 pb-4 sm:pb-6 md:pb-8 lg:pb-10 flex-shrink-0">
               {/* Mobile: Stacked Layout */}
-              <div className="lg:hidden flex flex-col gap-6 sm:gap-8">
+              <div className="lg:hidden flex flex-col gap-6 sm:gap-8 pb-4">
                 {/* Stats First on Mobile */}
-                <div className="flex flex-row items-center justify-around gap-6 sm:gap-8">
+                <div className="flex flex-row items-center justify-around gap-6 sm:gap-8 pb-2">
                   {/* Stat 1 */}
                   <div className="flex flex-col items-center">
                     <span className="font-inter text-white text-[2.5rem] sm:text-[3rem] font-[400] leading-[1] mb-1">
@@ -69,7 +69,7 @@ function Hero() {
                 </div>
 
                 {/* Logos Below on Mobile */}
-                <div className="flex flex-wrap items-center justify-center gap-5 sm:gap-7">
+                <div className="flex flex-wrap items-center justify-center gap-5 sm:gap-7 pb-4 sm:pb-6">
                   <Image 
                     src="/sba.svg" 
                     alt="SBA" 
@@ -102,10 +102,10 @@ function Hero() {
               </div>
 
               {/* Desktop: Original Layout */}
-              <div className="hidden lg:flex flex-row items-end justify-between gap-8">
+              <div className="hidden lg:flex flex-row items-end justify-between gap-8 pb-4">
                 
                 {/* === Logos Left === */}
-                <div className="flex flex-nowrap items-center justify-start gap-8 xl:gap-10">
+                <div className="flex flex-nowrap items-center justify-start gap-8 xl:gap-10 pb-2">
                   <Image 
                     src="/sba.svg" 
                     alt="SBA" 
@@ -137,7 +137,7 @@ function Hero() {
                 </div>
 
                 {/* === Stats Right === */}
-                <div className="flex flex-row items-end justify-end gap-16 xl:gap-20">
+                <div className="flex flex-row items-end justify-end gap-16 xl:gap-20 pb-2">
                   {/* Stat 1 */}
                   <div className="flex flex-col items-start">
                     <span className="font-inter text-white text-[3.5rem] xl:text-[4rem] font-[400] leading-[1] mb-2">
