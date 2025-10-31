@@ -7,7 +7,11 @@ import About from "./_sections/About";
 import Journey from "./_sections/Journey";
 import CoreValues from "./_sections/CoreValues";
 import Footer from "@/app/components/sections/footer";
-
+import TransformSection from "@/app/components/sections/TransformSection";
+import { Stats } from "fs";
+import StatsSection from "./_sections/StatsSection";
+import CommunityImpact from "./_sections/Communityimpact";
+import OurPartners from "./_sections/OurPartners";
 function page() {
   return (
     <>
@@ -41,7 +45,12 @@ function page() {
         </div>
         <Journey/>
        <CoreValues/>
-       {/* <Footer/> */}
+       <StatsSection/>
+       
+       <OurPartners/>
+       <CommunityImpact/>
+      <TransformSection/>
+       <Footer/>
       </div>
     </>
   );
