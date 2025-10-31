@@ -70,12 +70,9 @@ export default function CompanyTimeline() {
           <div className="lg:sticky lg:top-20 lg:self-start">
             <h1 className="text-5xl font-Syne font-[500] text-gray-900 mb-8">Our Journey</h1>
             <div className="text-lg text-gray-600 leading-relaxed space-y-4 font-inter-[400]">
-              <p>
-                Founded in <span className="font-[600] font-inter text-gray-900">2000 by Sumara and Muneer Baig</span>, SYSUSA began with a passion for solving mission-critical challenges through insight and innovation.
-              </p>
-              <p>
-                From our Virginia headquarters, we've grown into a trusted transformation partner for both public and private sectors.
-              </p>
+              <p className='font-inter font-[400]'>Founded in <span className='font-inter font-[700]'>2000 by Sumara and Muneer Baig</span>, SYSUSA began with a passion for solving mission-critical challenges through insight and innovation. From our Virginia headquarters, we’ve grown into a trusted transformation partner for both public and private sectors.
+
+</p>
             </div>
           </div>
 
