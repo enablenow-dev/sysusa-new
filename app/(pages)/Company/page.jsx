@@ -5,21 +5,20 @@ import Header from "@/app/components/layout/Header";
 import Button from "@/app/components/ui/Button";
 import About from "./_sections/About";
 import Journey from "./_sections/Journey";
+import CoreValues from "./_sections/CoreValues";
+import Footer from "@/app/components/sections/footer";
 
 function page() {
   return (
     <>
       <div className="relative">
         <section className="relative h-[80vh] sm:h-[90vh] flex flex-col">
-          <div className="absolute inset-0 -z-10">
-            <Image
-              src="/bgbanner.png"
-              alt="Hero background"
-              fill
-              style={{ objectFit: "cover", objectPosition: "center" }}
-              priority
-            />
-          </div>
+          <div 
+            className="absolute inset-0 -z-10"
+            style={{
+              background: 'radial-gradient(ellipse at center, #141428 0%, #2d1955 35%, #4b23a0 60%, #6432c8 100%)'
+            }}
+          />
 
           <Header />
 
@@ -41,6 +40,8 @@ function page() {
           <About/>
         </div>
         <Journey/>
+       <CoreValues/>
+       {/* <Footer/> */}
       </div>
     </>
   );

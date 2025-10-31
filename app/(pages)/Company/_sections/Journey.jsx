@@ -107,15 +107,16 @@ export default function CompanyTimeline() {
                         : 'opacity-40 transform translate-y-4'
                     }`}
                   >
-                    <div className="text-3xl font-bold text-gray-900 mb-2">
+                    <div className="text-3xl font-inter font-[600] text-gray-900 mb-2">
                       {milestone.year}
                     </div>
-                    <div className="text-xl font-semibold text-gray-800 mb-3">
+                    <div className="font-inter font-[600]  text-gray-800 mb-3">
                       {milestone.title}
                     </div>
-                    <div className="text-gray-600 leading-relaxed">
+                    <div className="font-inter font-[400] text-gray-600">
                       {milestone.description}
                     </div>
+                   
                   </div>
                 </div>
               ))}
