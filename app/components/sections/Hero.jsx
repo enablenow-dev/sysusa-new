@@ -10,16 +10,13 @@ function Hero() {
       <Header />
 
       <section className="relative h-screen flex flex-col overflow-hidden">
-        {/* === Background Image === */}
-        <div className="absolute inset-0 -z-10">
-          <Image
-            src="/bgbanner.png"
-            alt="Hero background"
-            fill
-            style={{ objectFit: 'cover', objectPosition: 'center' }}
-            priority
-          />
-        </div>
+        {/* === Background Gradient === */}
+        <div 
+          className="absolute inset-0 -z-10"
+          style={{
+            background: 'radial-gradient(ellipse at center, #141428 0%, #2d1955 35%, #4b23a0 60%, #6432c8 100%)'
+          }}
+        />
 
         {/* === Main Content === */}
         <div className="relative z-10 flex-1 flex flex-col">
@@ -27,7 +24,7 @@ function Hero() {
 
             {/* === Text + CTA === */}
             <div className="max-w-4xl flex-shrink-0">
-              <h1 className="text-white font-[500] font-[syne] leading-[1.15] sm:leading-[1.2] text-[2rem] sm:text-[2.75rem] md:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] mb-3 sm:mb-4 md:mb-5 lg:mb-6">
+              <h1 className="text-white font-[500] font-Syne leading-[1.15] sm:leading-[1.2] text-[2rem] sm:text-[2.75rem] md:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] mb-3 sm:mb-4 md:mb-5 lg:mb-6">
                 Transform your business with ServiceNow and cybersecurity expertise
               </h1>
 

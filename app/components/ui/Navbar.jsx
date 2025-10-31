@@ -38,7 +38,7 @@ const Header = () => {
             {['Company', 'Expertise', 'Careers', 'Resources', 'Client'].map((item) => (
               <li key={item} className="relative group">
                 <Link 
-                  href={`/${item.toLowerCase()}`}
+                  href={`/${item}`}
                   className="text-white hover:text-white text-base font-medium transition duration-150 flex items-center"
                 >
                   {item} 
